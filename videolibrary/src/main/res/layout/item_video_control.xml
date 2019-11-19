@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/video_control_item_height"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/video_control_item_top_bottom_padding"
+    android:paddingEnd="@dimen/video_control_item_left_right_padding"
+    android:paddingStart="@dimen/video_control_item_left_right_padding"
+    android:paddingTop="@dimen/video_control_item_top_bottom_padding">
+
+    <ImageView
+        android:layout_width="@dimen/video_control_img_size"
+        android:layout_height="@dimen/video_control_img_size"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/video_control_img_padding"
+        android:src="@drawable/video_control_img" />
+
+    <TextView
+        android:id="@+id/tv_participant_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/video_control_img_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/video_control_text_color"
+        android:textSize="@dimen/video_control_text_size" />
+
+    <ImageView
+        android:id="@+id/tv_participant_heard"
+        android:layout_width="@dimen/video_control_img_size"
+        android:layout_height="@dimen/video_control_img_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/video_control_img_margin"
+        android:padding="@dimen/video_control_img_padding"
+        android:src="@drawable/video_up_hand" />
+
+    <ImageView
+        android:id="@+id/tv_participant_camera"
+        android:layout_width="@dimen/video_control_img_size"
+        android:layout_height="@dimen/video_control_img_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/video_control_img_margin"
+        android:padding="@dimen/video_control_img_padding"
+        android:src="@drawable/mic_unmute" />
+
+    <ImageView
+        android:id="@+id/tv_participant_mic"
+        android:layout_width="@dimen/video_control_img_size"
+        android:layout_height="@dimen/video_control_img_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/video_control_img_margin"
+        android:padding="@dimen/video_control_img_padding"
+        android:src="@drawable/video_unmute" />
+
+    <ImageView
+        android:id="@+id/tv_participant_finish"
+        android:layout_width="@dimen/video_control_img_size"
+        android:layout_height="@dimen/video_control_img_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/video_control_img_margin"
+        android:padding="@dimen/video_control_img_padding"
+        android:src="@drawable/video_out" />
+
+</LinearLayout>

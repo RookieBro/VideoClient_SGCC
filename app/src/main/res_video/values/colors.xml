@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--会控属性-->
+    <color name="video_control_text_color">#ffffff</color>
+
+</resources>

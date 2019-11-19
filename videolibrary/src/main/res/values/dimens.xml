@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="picker_default_text_size">16sp</dimen>
+    <dimen name="picker_toolbar_height">60dp</dimen>
+    <dimen name="picker_dialog_height">200dp</dimen>
+    <dimen name="picker_dialog_content_height">130dp</dimen>
+    <dimen name="textview_default_padding">10dp</dimen>
+    <dimen name="picker_line_width">0dp</dimen>
+    <dimen name="picker_line_mar">15dp</dimen>
+    <dimen name="picker_height">230dp</dimen>
+    <dimen name="meeting_icon_size">30dp</dimen>
+    <dimen name="title_height">80dp</dimen>
+    <dimen name="chatroom_item_height">72dp</dimen>
+    <dimen name="list_top_btn_height">40dp</dimen>
+    <dimen name="list_top_btn_margin">15dp</dimen>
+    <dimen name="video_menu_end_margin">30dp</dimen>
+    <!--会控属性-->
+    <dimen name="video_control_item_height">50dp</dimen>
+    <dimen name="video_control_item_left_right_padding">30dp</dimen>
+    <dimen name="video_control_item_top_bottom_padding">5dp</dimen>
+    <dimen name="video_control_img_size">30dp</dimen>
+    <dimen name="video_control_img_padding">3dp</dimen>
+    <dimen name="video_control_img_margin">10dp</dimen>
+    <dimen name="video_control_text_size">12sp</dimen>
+
+</resources>

@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <Button
+        android:id="@+id/btn_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="临时会议  一般用于第三方app开会" />
+
+</FrameLayout>

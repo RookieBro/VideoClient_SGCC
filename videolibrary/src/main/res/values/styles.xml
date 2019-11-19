@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeWithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_Full" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme_Full_Tran" parent="AppTheme_Full">
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Theme_MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        //设置透明
+        <item name="android:windowFrame">@null</item>
+        //设置没有边框
+        <item name="android:windowIsFloating">true</item>
+        //设置没有边框
+        <item name="android:windowIsTranslucent">true</item>
+        //半透明
+        <item name="android:backgroundDimEnabled">true</item>
+        //弹出对话框屏幕是否变暗
+    </style>
+
+    <style name="messageSendOtherName">
+        <item name="android:textColor">#757575</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="meetingCreate_tv">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+    </style>
+
+    <style name="meetingCreate_et">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textColorHint">#dddfde</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="tv_meeting">
+        <item name="android:textColor">#03a9f4</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AnimationPicker" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="SureButtonStyle">
+        <item name="android:layout_marginLeft">44dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">44dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_meeting_sure_bg</item>
+        <item name="android:text">@string/picker_sure</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ChatTimeStampStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#111111</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/gzb_chat_time</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+    <style name="messageSendName">
+        <item name="android:textColor">#bdbdbd</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">11dp</item>
+    </style>
+
+    <!--消息文本样式-->
+    <style name="ChatTextStyle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">235dp</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="messageRecvName">
+        <item name="android:textColor">#bdbdbd</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">11dp</item>
+    </style>
+
+    <style name="selectCameraDialogImgStyle">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="selectCameraDialogTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

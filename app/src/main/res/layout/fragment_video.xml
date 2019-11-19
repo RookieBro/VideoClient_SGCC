@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_direct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点呼" />
+
+    <Button
+        android:id="@+id/btn_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="会议室" />
+
+    <Button
+        android:id="@+id/btn_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="会控测试" />
+
+    <Button
+        android:id="@+id/btn_change_waterMark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="切换水印显示" />
+
+    <FrameLayout
+        android:id="@+id/fl_video_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

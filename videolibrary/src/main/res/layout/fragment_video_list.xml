@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_video_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_createVideo"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_top_btn_height"
+                android:layout_marginBottom="@dimen/list_top_btn_margin"
+                android:layout_marginTop="@dimen/list_top_btn_margin"
+                android:layout_weight="1"
+                android:background="@color/white_main"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/add_video_room" />
+
+                <Button
+                    android:id="@+id/btn_createVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="@string/create_videoRoom"
+                    android:textColor="#787878"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/list_top_btn_height"
+                android:layout_gravity="center_vertical"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_videoHistory"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_top_btn_height"
+                android:layout_marginBottom="@dimen/list_top_btn_margin"
+                android:layout_marginTop="@dimen/list_top_btn_margin"
+                android:layout_weight="1"
+                android:background="@color/white_main"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/history_video_room" />
+
+                <Button
+                    android:id="@+id/btn_videoHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="@string/video_history"
+                    android:textColor="#787878"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line"
+            android:translationY="-15dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rl_videoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lv_defaultRoom"
+        android:layout_marginTop="15dp"
+        android:background="@color/white_main">
+
+        <ListView
+            android:id="@+id/lv_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@null">
+
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_videoRoomEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="会议列表空空哒~"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@id/lv_defaultRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_video_setting"
+        android:childDivider="@null"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:minHeight="50dp">
+
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/btn_definition"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_definition_bg"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    <!--50dp-->
+
+    <FrameLayout
+        android:id="@+id/fl_watermark_videoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">VideoLibrary</string>
+
+    <string name="startTime">开始时间</string>
+    <string name="endTime">结束时间</string>
+
+    <string name="picker_sure">确定</string>
+    <string name="picker_year">年</string>
+    <string name="picker_month">月</string>
+    <string name="picker_day">日</string>
+    <string name="picker_hour">时</string>
+    <string name="picker_minute">分</string>
+    <string name="picker_cancel">取消</string>
+    <string name="picker_title">选择时间</string>
+    <string name="video_history">历史会议</string>
+    <string name="create_videoRoom">创建会议</string>
+    <string name="create_videoName">请输入会议名</string>
+    <string name="s_video_room">%s 的会议室</string>
+    <string name="copy_rec_location">复制视频链接</string>
+    <string name="outSevenRec">7天前的会议记录</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appointment">预约中</string>
+    <string name="starting">正在进行</string>
+    <string name="creator_yourself">您是会议创建者，不能删除自己</string>
+    <string name="name_can_not_empty">名字不能为空</string>
+    <string name="add_user">添加</string>
+    <string name="network_error">网络错误，请检查网络</string>
+    <string name="please_operate_later">正在操作会议，请稍后再试</string>
+    <string name="setting_success">设置成功，重新进入会议后生效</string>
+    <string name="click_join_video">点击进入        </string>
+    <string name="video_room">视频会议</string>
+    <string name="into_room_list">,可从会议列表进入</string>
+    <string name="know">知道了</string>
+    <string name="delete_room_success">删除会议成功</string>
+    <string name="delete_room_fail">删除会议失败，请重试</string>
+    <string name="camera_b">后置摄像头</string>
+    <string name="camera_n">关闭摄像头</string>
+    <string name="camera_f">前置摄像头</string>
+    <string name="waiting_answer">正在邀请</string>
+
+</resources>

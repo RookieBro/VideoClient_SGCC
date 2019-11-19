@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_meetingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"
+            android:translationY="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/meetingCreate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议主题" />
+
+            <EditText
+                android:id="@+id/et_meetingName"
+                style="@style/meetingCreate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="本次会议主题(20字以内)"
+                android:maxLength="20"
+                android:maxLines="2" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="#dddfde" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--58dp-->
+            <TextView
+                style="@style/meetingCreate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议描述" />
+
+            <EditText
+                android:id="@+id/et_dec"
+                style="@style/meetingCreate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="可选填(70字以内)" />
+            <!--  视频会议  #视频测试#-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/meetingCreate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="参会人员" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ll_addPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/white_main">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_main"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_meeting_1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/meeting_style_true" />
+
+                    <TextView
+                        android:id="@+id/tv_meeting_1"
+                        style="@style/tv_meeting"
+                        android:text="召开会议" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_meeting_2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/meeting_style_false" />
+
+                    <TextView
+                        android:id="@+id/tv_meeting_2"
+                        style="@style/tv_meeting"
+                        android:text="预约会议" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/startTime"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/endTime"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white_main">
+
+            <Button
+                android:id="@+id/btn_sure"
+                style="@style/SureButtonStyle" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_watermark_createVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

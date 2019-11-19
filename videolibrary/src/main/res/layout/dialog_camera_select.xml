@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camera_select_bg"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll_camera_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/selectCameraDialogImgStyle"
+            android:src="@drawable/camera_select_f" />
+
+        <TextView
+            style="@style/selectCameraDialogTextStyle"
+            android:text="@string/camera_f" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/ll_camera_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/selectCameraDialogImgStyle"
+            android:src="@drawable/camera_select_b" />
+
+        <TextView
+            style="@style/selectCameraDialogTextStyle"
+            android:text="@string/camera_b" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/ll_camera_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/selectCameraDialogImgStyle"
+            android:src="@drawable/camera_select_n" />
+
+        <TextView
+            style="@style/selectCameraDialogTextStyle"
+            android:text="@string/camera_n" />
+
+    </LinearLayout>
+
+</LinearLayout>

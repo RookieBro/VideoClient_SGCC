@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="25dp">
+
+    <FrameLayout
+        android:id="@+id/fl_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:longClickable="true"
+        android:onClick="end"
+        android:src="@drawable/end_normal" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="@dimen/video_menu_end_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_orientation"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:onClick="orientationChange"
+            android:src="@drawable/video_orientation_land"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_video_participants"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:layout_marginEnd="15dp"
+            android:onClick="showVideoParticipants"
+            android:src="@drawable/video_participants" />
+
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:layout_marginEnd="15dp"
+            android:onClick="recordConference"
+            android:src="@drawable/record_normal"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_mic"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:onClick="micUseChange"
+            android:src="@drawable/mic_normal" />
+
+        <ImageView
+            android:id="@+id/iv_camera_change"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:layout_marginStart="15dp"
+            android:onClick="changeCamera"
+            android:src="@drawable/camera_f" />
+
+        <ImageView
+            android:id="@+id/iv_listener"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:layout_marginStart="15dp"
+            android:onClick="micListenerChange"
+            android:src="@drawable/voice_normal" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="@dimen/meeting_icon_size"
+            android:layout_height="@dimen/meeting_icon_size"
+            android:layout_marginStart="15dp"
+            android:onClick="more"
+            android:src="@drawable/meeting_more"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.telecomyt.videolibrary.view.WaitingTextView
+        android:id="@+id/tv_waiting_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/waiting_answer"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ac000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_water_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

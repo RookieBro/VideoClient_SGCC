@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_bg">#F9F9F9</color>
+    <color name="video_list_text_color">#000000</color>
+    <color name="gray_bg_durk">#eaeaea</color>
+    <color name="white_main">#FFFFFF</color>
+
+    <color name="timeTimePicker_default_text_color">#999999</color>
+    <color name="TimePicker_toolbar_bg">#ffffff</color>
+    <color name="TimePicker_dialog_bg">#80000000</color>
+    <color name="TimePicker_line">#e8e8e8</color>
+
+    <color name="blue_light">#03a9f4</color>
+    <color name="black">#000000</color>
+    <color name="black_tran">#ac000000</color>
+    <color name="blue">#3E51B5</color>
+    <color name="blue_title">#2F3FA0</color>
+
+    <color name="line">#dcdcdc</color>
+    <color name="link_text_color">#5c5cff</color>
+    |<color name="sub_title_color">#666666</color>
+    <color name="blue_5c5cff">#5c5cff</color>
+    <color name="gray_666666">#666666</color>
+
+    <!--会控属性-->
+    <color name="video_control_text_color">#ffffff</color>
+
+</resources>
